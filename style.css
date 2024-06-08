@@ -1,0 +1,128 @@
+*,
+*:before *:after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(248, 200, 248);
+}
+
+#navbar {
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 63px;
+    background-color: rgb(28, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box-style {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.logo-box-style h1 {
+    margin: 0;
+    /* Remove default margin for better centering */
+    font-size: 3.1rem;
+    /* Adjust this value to change the font size */
+}
+
+.container {
+    background-color: white;
+    width: 44%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50);
+    top: 18%;
+    left: 30%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.338);
+}
+
+.time-display {
+    position: relative;
+    width: 92%;
+    background: white;
+    left: 4%;
+    font-family: 'Roboto mono', monospace;
+    font-size: 35px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.338);
+}
+
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    font-family: initial;
+    font-size: large;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+#start-timer {
+    background-color: greenyellow;
+}
+
+#pause-timer {
+    background-color: wheat;
+}
+
+#reset-timer {
+    background-color: orange;
+}
+
+
+.buttons button:hover {
+    /* background-color: blue; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.300);
+}
+
+.lap-times {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.lap-times h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lap-times ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lap-times ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #dee2e6;
+    font-family: 'Roboto mono', monospace;
+    font-size: 20px;
+}
